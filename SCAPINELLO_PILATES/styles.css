@@ -1,0 +1,283 @@
+body {
+    /* Define a fonte do corpo como 'Roboto', com fallback para sans-serif */
+    font-family: 'Roboto', sans-serif;
+    
+    /* Remove as margens padrão */
+    margin: 0;
+
+    /* Remove o padding padrão */
+    padding: 0;
+
+    /* Define o tamanho da fonte como 125% do tamanho padrão (geralmente 16px) */
+    font-size: 125%;
+}
+
+header {
+    /* Define a cor de fundo do cabeçalho como cinza escuro */
+    background-color: #333;
+
+    /* Define a cor do texto como branco */
+    color: white;
+
+    /* Define o preenchimento interno (espaçamento) em 15px */
+    padding: 15px;
+
+    /* Centraliza o texto dentro do cabeçalho */
+    text-align: center;
+}
+
+.logo-container {
+    /* Define o logo como um container flexível para centralizar o conteúdo */
+    display: flex;
+
+    /* Alinha verticalmente o logo no centro do container */
+    align-items: center;
+
+    /* Centraliza horizontalmente o logo dentro do container */
+    justify-content: center;
+}
+
+.logo {
+    /* Define a largura da logo em 20% do container */
+    width: 20%;
+
+    /* A altura é definida automaticamente, mantendo a proporção da imagem */
+    height: auto;
+}
+
+nav {
+    /* Define o menu de navegação como flexível para facilitar a disposição horizontal dos links */
+    display: flex;
+
+    /* Centraliza os itens do menu horizontalmente */
+    justify-content: center;
+
+    /* Define a cor de fundo do menu de navegação como cinza mais claro */
+    background-color: #444;
+}
+
+nav a {
+    /* Define a cor dos links como branco */
+    color: white;
+
+    /* Define o espaçamento interno dos links */
+    padding: 14px 20px;
+
+    /* Remove o sublinhado dos links */
+    text-decoration: none;
+
+    /* Converte o texto para letras maiúsculas */
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    /* Altera a cor de fundo dos links quando o mouse passa sobre eles */
+    background-color: #555;
+}
+
+.container {
+    /* Define o espaçamento interno da área de conteúdo */
+    padding: 20px;
+}
+
+.intro, .services, .location {
+    /* Define uma margem inferior de 40px para criar espaçamento entre as seções */
+    margin-bottom: 40px;
+}
+
+.intro h2, .services h2, .location h2 {
+    /* Adiciona uma borda inferior aos títulos das seções */
+    border-bottom: 2px solid #333;
+
+    /* Adiciona um espaçamento inferior nos títulos */
+    padding-bottom: 10px;
+}
+
+footer {
+    /* Define a cor de fundo do rodapé como cinza escuro */
+    background-color: #333;
+
+    /* Define a cor do texto como branco */
+    color: white;
+
+    /* Centraliza o texto no rodapé */
+    text-align: center;
+
+    /* Define o espaçamento interno do rodapé */
+    padding: 10px 0;
+}
+
+.instagram-logo {
+    /* Define a largura da logo do Instagram como 40px */
+    width: 40px;
+
+    /* A altura é definida automaticamente */
+    height: auto;
+
+    /* Adiciona um pequeno espaçamento superior */
+    margin-top: 0.5px;
+}
+
+.contact-info a {
+    /* Define a exibição dos links de contato como inline-block */
+    display: inline-block;
+
+    /* Adiciona margem lateral entre os links */
+    margin: 0 10px;
+
+    /* Remove a decoração de texto dos links */
+    text-decoration: none;
+}
+
+.contact-info a img {
+    /* Alinha verticalmente as imagens dos links com o texto */
+    vertical-align: middle;
+}
+
+.contact-info a {
+    /* Define a cor dos links de contato como branco */
+    color: white;
+
+    /* Remove a decoração de texto dos links */
+    text-decoration: none;
+}
+
+contact-info a:hover {
+    /* Adiciona um sublinhado quando o mouse passa sobre os links de contato */
+    text-decoration: underline;
+}
+
+.fotos h2 {
+    /* Adiciona uma borda inferior ao título da seção de fotos */
+    border-bottom: 2px solid #333;
+
+    /* Adiciona espaçamento inferior ao título */
+    padding-bottom: 10px;
+}
+
+.galeria {
+    /* Define o container da galeria como flexível, permitindo que as imagens se alinhem em linha */
+    display: flex;
+
+    /* Permite que os itens da galeria quebrem linha se necessário */
+    flex-wrap: wrap;
+
+    /* Adiciona um espaço de 10px entre as imagens */
+    gap: 40px;
+
+    justify-content: center;
+}
+
+.galeria img {
+    /* Define a largura das imagens como 30% do container da galeria */
+    width: 30%;
+
+    /* Mantém a altura das imagens proporcional */
+    height: auto;
+
+    /* Adiciona uma borda cinza clara às imagens */
+    border: 2px solid #ccc;
+
+    /* Adiciona uma transição suave ao passar o mouse sobre as imagens */
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    /* Aumenta o tamanho das imagens quando o mouse passa sobre elas */
+    transform: scale(1.1);
+
+    /* Altera a cor da borda para um cinza mais escuro */
+    border-color: #333;
+}
+
+@media (max-width: 1024px) {
+    /* Ajustes para dispositivos com largura de tela até 1024px (tablets) */
+    .container {
+        /* Muda a direção do conteúdo para coluna em vez de linha */
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para dispositivos com largura de tela até 480px (smartphones) */
+    .nav a {
+        /* Exibe os links do menu como blocos, um abaixo do outro */
+        display: block;
+
+        /* Reduz o padding dos links para melhor visualização em telas menores */
+        padding: 10px;
+    }
+}
+
+/* Efeito de hover nos links */
+a:hover {
+    /* Altera a cor dos links quando o mouse passa sobre eles */
+    color: #007BFF;
+
+    /* Adiciona uma transição suave na mudança de cor */
+    transition: color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse nas imagens */
+.galeria img {
+    /* Define uma transição suave tanto para o redimensionamento quanto para a sombra ao passar o mouse */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria img:hover {
+    /* Aumenta o tamanho das imagens quando o mouse passa sobre elas */
+    transform: scale(1.05);
+
+    /* Adiciona uma sombra suave às imagens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.beneficios {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.beneficios h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.grid-beneficios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.beneficio {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.beneficio img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.beneficio h3 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #db7c16; /* Cor personalizada do título */
+}
+
+.beneficio p {
+    font-size: 0.9em;
+    color: #cf752c;
+    margin-top: 5px;
+}
+
+.beneficio span {
+    display: block;
+    font-size: 0.95em;
+    margin-top: 10px;
+    color: #333;
+}

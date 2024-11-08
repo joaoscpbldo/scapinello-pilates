@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-size: 125%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 0%;
+    margin-right: 20px;
+}
+
+.bio {
+    max-width: 100%;
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .bio {
+        max-width: 100%;
+    }
+}
+
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+footer {
+    /* Define a cor de fundo do rodapé como cinza escuro */
+    background-color: #333;
+
+    /* Define a cor do texto como branco */
+    color: white;
+
+    /* Centraliza o texto no rodapé */
+    text-align: center;
+
+    /* Define o espaçamento interno do rodapé */
+    padding: 10px 0;
+}
+
+.instagram-logo {
+    /* Define a largura da logo do Instagram como 40px */
+    width: 40px;
+
+    /* A altura é definida automaticamente */
+    height: auto;
+
+    /* Adiciona um pequeno espaçamento superior */
+    margin-top: 0.5px;
+}
+
+.contact-info a {
+    /* Define a exibição dos links de contato como inline-block */
+    display: inline-block;
+
+    /* Adiciona margem lateral entre os links */
+    margin: 0 10px;
+
+    /* Remove a decoração de texto dos links */
+    text-decoration: none;
+}
+
+.contact-info a img {
+    /* Alinha verticalmente as imagens dos links com o texto */
+    vertical-align: middle;
+}
+
+.contact-info a {
+    /* Define a cor dos links de contato como branco */
+    color: white;
+
+    /* Remove a decoração de texto dos links */
+    text-decoration: none;
+}
+
+contact-info a:hover {
+    /* Adiciona um sublinhado quando o mouse passa sobre os links de contato */
+    text-decoration: underline;
+}
+
+body {
+    /* Define a fonte do corpo como 'Roboto', com fallback para sans-serif */
+    font-family: 'Roboto', sans-serif;
+    
+    /* Remove as margens padrão */
+    margin: 0;
+
+    /* Remove o padding padrão */
+    padding: 0;
+
+    /* Define o tamanho da fonte como 125% do tamanho padrão (geralmente 16px) */
+    font-size: 125%;
+}
+
+header {
+    /* Define a cor de fundo do cabeçalho como cinza escuro */
+    background-color: #333;
+
+    /* Define a cor do texto como branco */
+    color: white;
+
+    /* Define o preenchimento interno (espaçamento) em 15px */
+    padding: 15px;
+
+    /* Centraliza o texto dentro do cabeçalho */
+    text-align: center;
+}
+
+.logo-container {
+    /* Define o logo como um container flexível para centralizar o conteúdo */
+    display: flex;
+
+    /* Alinha verticalmente o logo no centro do container */
+    align-items: center;
+
+    /* Centraliza horizontalmente o logo dentro do container */
+    justify-content: center;
+}
+
+.logo {
+    /* Define a largura da logo em 20% do container */
+    width: 20%;
+
+    /* A altura é definida automaticamente, mantendo a proporção da imagem */
+    height: auto;
+}
+
+nav {
+    /* Define o menu de navegação como flexível para facilitar a disposição horizontal dos links */
+    display: flex;
+
+    /* Centraliza os itens do menu horizontalmente */
+    justify-content: center;
+
+    /* Define a cor de fundo do menu de navegação como cinza mais claro */
+    background-color: #444;
+}
+
+nav a {
+    /* Define a cor dos links como branco */
+    color: white;
+
+    /* Define o espaçamento interno dos links */
+    padding: 14px 20px;
+
+    /* Remove o sublinhado dos links */
+    text-decoration: none;
+
+    /* Converte o texto para letras maiúsculas */
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    /* Altera a cor de fundo dos links quando o mouse passa sobre eles */
+    background-color: #555;
+}
+
+.container {
+    /* Define o espaçamento interno da área de conteúdo */
+    padding: 20px;
+}
+
+.intro, .services, .sobre {
+    /* Define uma margem inferior de 40px para criar espaçamento entre as seções */
+    margin-bottom: 40px;
+}
+
+.intro h2, .services h2, .sobre h2 {
+    /* Adiciona uma borda inferior aos títulos das seções */
+    border-bottom: 2px solid #333;
+
+    /* Adiciona um espaçamento inferior nos títulos */
+    padding-bottom: 10px;
+}
+
+/* Efeito de hover nos links */
+a:hover {
+    /* Altera a cor dos links quando o mouse passa sobre eles */
+    color: #007BFF;
+
+    /* Adiciona uma transição suave na mudança de cor */
+    transition: color 0.3s ease;
+}
